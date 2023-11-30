@@ -1,7 +1,8 @@
 :root{
     --base-spacing:20px;
     --gap-base: 10px;
-    --header-height:80px
+    --header-height:80px;
+    --section-margin: 150px
 }
 
 /* ! reset */
@@ -135,6 +136,8 @@ a{
 }
 
 /* ! main body */
+
+/* * offer section */
 .container.wrapper{
     margin-top: 150px;
 
@@ -142,26 +145,26 @@ a{
     min-height: 2000px;
 }
 
-.card-container{
-    padding: var(--gap-base);
+.offer-section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    gap: var(--base-spacing);
+    
     /* debug */
     background-color: aquamarine;
     min-height: 1200px;
-    gap: var(--base-spacing);
+    padding: var(--gap-base);
 }
 
-.card-container .hr-container{
+.offer-section .hr-container{
     flex-basis: 200px;
     
     /* debug */
     background-color: red;
 }
 
-.card-container .vr-container{
+.offer-section .vr-container{
     padding: 10px;
     flex-grow: 1;
     display: flex;
@@ -178,3 +181,31 @@ a{
     /* debug */
     background-color: lightgray;
 }
+
+/* * Partener section */
+
+.partner-section{
+    margin-top: var(--section-margin);
+    display: flex;
+    
+    /* debug */
+    min-height: 450px;
+    background-color: darkcyan;
+    padding: var(--gap-base);
+}
+
+
+.partner-section .partner-img{
+    flex-grow: 1;
+    
+    /* debug */
+    background-color: darkseagreen;
+}
+
+.partner-section .partner-text{
+    flex-basis: 40%;
+
+    /* debug */
+    background-color: green;
+}
+
