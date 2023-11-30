@@ -33,7 +33,7 @@ a{
 }
 
 .container{
-    min-width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -80,7 +80,6 @@ a{
 /* ! Jumbotron */
 .jumbotron{
     display: flex;
-    justify-content: center;
     align-items: flex-end;
 
     /* debug */
@@ -136,44 +135,46 @@ a{
 }
 
 /* ! main body */
-.main .main-wrapper{
-    display: flex;
-    justify-content: center;
-    padding: 150px;
+.container.wrapper{
+    margin-top: 150px;
+
+    /* debug */
+    min-height: 2000px;
 }
 
-.main section.container{
+.card-container{
     padding: var(--gap-base);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     /* debug */
-    background-color: #005dff;
+    background-color: aquamarine;
     min-height: 1200px;
-    gap: var(--gap-base);
+    gap: var(--base-spacing);
 }
 
-.main .container .hr-container{
+.card-container .hr-container{
+    flex-basis: 200px;
     
     /* debug */
-    min-height: flex-basis;
-    background-color: grey;
-    flex-basis: 20%;
+    background-color: red;
 }
 
-.main .container .vt-container{
+.card-container .vr-container{
     padding: 10px;
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     gap: var(--gap-base);
+
     /* debug */
-    background-color: lightgray;
-    flex-grow: 1;
+    background-color: blue;
 }
 
-.container .vt-container .card{
+.vr-container .card{
     width: calc(100% / 3 - var(--gap-base));
+
     /* debug */
-    background-color: red;
+    background-color: lightgray;
 }
