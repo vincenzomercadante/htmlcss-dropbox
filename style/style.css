@@ -31,8 +31,14 @@ a{
     color: white;
 }
 
+.container{
+    min-width: 1000px;
+}
+
 /* ! header */
 .header{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,3 +71,63 @@ a{
     padding-right: var(--base-spacing);
 }
 
+
+/* ! main */
+
+/* ! Jumbotron */
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    /* debug */
+    min-height: 750px;
+    background-color: aqua;
+}
+
+.container.big{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+
+    /* debug */
+    padding: var(--base-spacing);
+    min-height: 600px;
+    min-width: 1200px;
+    background-color: blueviolet;
+}
+
+.jumbo-title{
+    
+    /* debug */
+    background-color: cornflowerblue;
+    min-height: 144px;
+}
+
+.jumbo-paragraph{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    /* debug */
+    background-color: cornflowerblue;
+    min-height: 450px;
+}
+
+.jumbo-paragraph .text{
+    flex-basis: 40%;
+    margin-top: 50px;
+
+    /* debug */
+    background-color: green;
+}
+
+.jumbo-paragraph .image{
+    position: relative;
+    flex-grow: 1;
+    bottom: -50px;
+
+    /* debug */
+    background-color: green;
+}
