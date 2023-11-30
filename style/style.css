@@ -15,6 +15,7 @@
 /* ! generics */
 body{
     font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 1px;
 }
 
 li{
@@ -28,7 +29,7 @@ a{
 }
 
 .button{
-    padding: 5px var(--gap-base);
+    padding: 10px 20px;
     background-color: #005dff;
     color: white;
 }
@@ -47,32 +48,22 @@ a{
     justify-content: space-between;
     align-items: center;
 
-    /* debug */
-    background-color: burlywood;
-    min-height: var(--header-height)
 }
 
 .header .navbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--base-spacing);
-
-    /* debug */
-    background-color: coral;
-    padding-left: var(--base-spacing);
-    min-height: var(--header-height);
+    padding: var(--base-spacing);
 }
 
-.header .navbar .nav-list li{
-    margin-right: var(--base-spacing);
+.navbar .nav-list li{
+    margin-left: 40px;
 }
 
 .header .navbar.right{
     flex-direction: row-reverse;
-
-    /* debug */
-    padding-right: var(--base-spacing);
+    gap: 20px;
 }
 
 
