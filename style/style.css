@@ -274,9 +274,45 @@ a{
 }
 
 .faq-section{
-    margin-top: var(--section-margin);
+    margin-top: 200px;
 
     /* debug */
     min-height: 450px;
     background-color: cadetblue;
+}
+
+.footer{
+    margin-top: 200px;
+    padding: 50px 0;
+    /* debug */
+    min-height: 400px;
+    background-color: #000000;
+}
+
+.footer .container.big{
+
+    /* debug */
+    background-color: #005dff;
+    min-height: 400px;
+}
+
+.footer .footer-row{
+
+
+    /* debug */
+    background-color: red;
+    min-height: 150px;
+}
+
+.footer .footer-row:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-row .footer-column{
+    width: calc(100% / 5 - 50px);
+
+    /* debug */
+    background-color: green;
+    min-height: 130px;
 }
