@@ -1,5 +1,6 @@
 :root{
     --base-spacing:20px;
+    --gap-base: 10px;
     --header-height:80px
 }
 
@@ -26,19 +27,21 @@ a{
 }
 
 .button{
-    padding: 5px 10px;
+    padding: 5px var(--gap-base);
     background-color: #005dff;
     color: white;
 }
 
 .container{
     min-width: 1000px;
+    margin: 0 auto;
 }
 
 /* ! header */
 .header{
     position: sticky;
     top: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,7 +111,7 @@ a{
 .jumbo-paragraph{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: var(--gap-base);
 
     /* debug */
     background-color: cornflowerblue;
@@ -130,4 +133,47 @@ a{
 
     /* debug */
     background-color: green;
+}
+
+/* ! main body */
+.main .main-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+}
+
+.main section.container{
+    padding: var(--gap-base);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* debug */
+    background-color: #005dff;
+    min-height: 1200px;
+    gap: var(--gap-base);
+}
+
+.main .container .hr-container{
+    
+    /* debug */
+    min-height: flex-basis;
+    background-color: grey;
+    flex-basis: 20%;
+}
+
+.main .container .vt-container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-base);
+    /* debug */
+    background-color: lightgray;
+    flex-grow: 1;
+}
+
+.container .vt-container .card{
+    width: calc(100% / 3 - var(--gap-base));
+    /* debug */
+    background-color: red;
 }
