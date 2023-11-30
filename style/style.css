@@ -209,3 +209,74 @@ a{
     background-color: green;
 }
 
+/* *business section */
+.business-section{
+    margin-top: var(--section-margin);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+
+    /* debug */
+    min-height: 800px;
+    background-color: cadetblue;
+}
+
+.business-section .card{
+    width: calc(100% / 3 - 10px);
+
+    /* debug */
+    min-height: 300px;
+    background-color: brown;
+}
+
+.suggest{
+    margin-top: 200px;
+
+    /* debug */
+    background-color: chartreuse;
+    min-height: 200px;
+}
+
+.company{
+    margin-top: var(--section-margin);
+    display: flex;
+    width: 100vw;
+
+    /* debug */
+    background-color: crimson;
+}
+
+.company > *{
+    width: calc(100% / 3);
+    height: calc(100vw /3);
+    display: flex;
+    flex-wrap: wrap;
+
+    /* debug */
+    background-color: greenyellow;
+}
+
+.company .company-img-container .company-img{
+    width: calc(100% / 2);
+
+    /* debug */
+    background-color: aqua;
+
+    border: 3px dashed black;
+}
+
+.free-trial{
+
+    /* debug */
+    min-height: 300px;
+    background-color: darkorange;
+}
+
+.faq-section{
+    margin-top: var(--section-margin);
+
+    /* debug */
+    min-height: 450px;
+    background-color: cadetblue;
+}
