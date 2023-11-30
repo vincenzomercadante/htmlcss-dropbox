@@ -1,6 +1,67 @@
+:root{
+    --base-spacing:20px;
+    --header-height:80px
+}
+
 /* ! reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ! generics */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.button{
+    padding: 5px 10px;
+    background-color: #005dff;
+    color: white;
+}
+
+/* ! header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug */
+    background-color: burlywood;
+    min-height: var(--header-height)
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--base-spacing);
+
+    /* debug */
+    background-color: coral;
+    padding-left: var(--base-spacing);
+    min-height: var(--header-height);
+}
+
+.header .navbar .nav-list li{
+    margin-right: var(--base-spacing);
+}
+
+.header .navbar.right{
+    flex-direction: row-reverse;
+
+    /* debug */
+    padding-right: var(--base-spacing);
+}
+
