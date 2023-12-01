@@ -18,6 +18,10 @@ body{
     word-spacing: 1px;
 }
 
+img{
+    width: 100%;
+}
+
 li{
     display: inline-block;
     list-style: none;
@@ -47,6 +51,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 
 }
 
@@ -73,57 +78,58 @@ a{
 .jumbotron{
     display: flex;
     align-items: flex-end;
+    background-color: #b4d0e7;
 
-    /* debug */
-    min-height: 750px;
-    background-color: aqua;
 }
 
 .container.big{
+    min-width: 1200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
-
-    /* debug */
-    padding: var(--base-spacing);
-    min-height: 600px;
-    min-width: 1200px;
-    background-color: blueviolet;
+    justify-content: flex-end;
 }
 
-.jumbo-title{
-    
-    /* debug */
-    background-color: cornflowerblue;
-    min-height: 144px;
+.jumbotron .container h1{
+    margin-top: 100px;
+    font-size: 5rem;
 }
 
 .jumbo-paragraph{
     display: flex;
     justify-content: center;
-    gap: var(--gap-base);
-
-    /* debug */
-    background-color: cornflowerblue;
-    min-height: 450px;
 }
 
-.jumbo-paragraph .text{
-    flex-basis: 40%;
-    margin-top: 50px;
-
-    /* debug */
-    background-color: green;
+.jumbo-paragraph .paragraph-text{
+    flex-basis: 30%;
+    margin-top: 80px;
+    position: relative;
 }
 
-.jumbo-paragraph .image{
+.jumbo-paragraph .paragraph-text p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.jumbo-paragraph .paragraph-text .button{
+    margin: 30px 0;
+    width: fit-content;
+}
+
+.jumbo-paragraph .paragraph-image{
     position: relative;
     flex-grow: 1;
-    bottom: -50px;
+    bottom: -80px;
+}
 
-    /* debug */
-    background-color: green;
+.paragraph-text .arrow{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    font-size: 3rem;
+}
+
+.paragraph-image img{
+    height: 500px;
 }
 
 /* ! main body */
