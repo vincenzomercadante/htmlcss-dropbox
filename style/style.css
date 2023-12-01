@@ -449,14 +449,20 @@ p{
     color: black;
 }
 
-
-
 .faq-section{
     margin-top: 200px;
+}
 
-    /* debug */
-    min-height: 450px;
-    background-color: cadetblue;
+.faq-section .big-title{
+    margin-bottom: var(--big-space);
+}
+
+.faq-section .faq-container{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .footer{
