@@ -18,6 +18,7 @@ body{
 
 img{
     width: 100%;
+    display: block;
 }
 
 li{
@@ -30,6 +31,10 @@ a{
     color: inherit;
 }
 
+p{
+    line-height: 1.3rem;
+}
+
 .button{
     padding: 10px 20px;
     background-color: var(--base-color);
@@ -40,6 +45,14 @@ a{
 .container{
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.big-title{
+    font-size: 2.5rem;
+}
+
+.small-title{
+    font-size: 1.5rem;
 }
 
 /* ! header */
@@ -124,10 +137,7 @@ a{
 
 /* * offer section */
 .container.wrapper{
-    margin-top: 150px;
-
-    /* debug */
-    min-height: 2000px;
+    margin-top: 200px;
 }
 
 .offer-section{
@@ -138,10 +148,6 @@ a{
     
     /* debug */
     min-height: 1200px;
-}
-
-.hr-container h2{
-    font-size: 2.5rem;
 }
 
 .hr-container .fatturazione{
@@ -244,7 +250,7 @@ a{
 }
 
 .hr-container.card .card-body p{
-    margin-top: 50px;
+    margin-top: var(--big-space);
 }
 
 .card-body .card-button{
@@ -256,49 +262,52 @@ a{
 /* * Partener section */
 
 .partner-section{
-    margin-top: var(--section-margin);
+    margin-top: 200px;
     display: flex;
-    
-    /* debug */
-    min-height: 450px;
-    background-color: darkcyan;
-    padding: var(--gap-base);
 }
 
 
 .partner-section .partner-img{
-    flex-grow: 1;
-    
-    /* debug */
-    background-color: darkseagreen;
+   width: 60%;
 }
 
 .partner-section .partner-text{
-    flex-basis: 40%;
-
-    /* debug */
-    background-color: green;
+    width: 40%;
+    padding: 50px;
 }
+
+.partner-text > *{
+    margin-bottom: 20px;
+}
+
+.partner-text .button.btn-secondary{
+    width: fit-content;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
 
 /* *business section */
 .business-section{
-    margin-top: var(--section-margin);
+    margin-top: 200px;
+    /* debug */
+}
+
+.business-section .card-container {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 20px;
-
-    /* debug */
-    min-height: 800px;
-    background-color: cadetblue;
+    row-gap: 45px;
 }
 
-.business-section .card{
-    width: calc(100% / 3 - 10px);
+.card-container .small-title{
+    margin-bottom: 30px;
+}
 
-    /* debug */
-    min-height: 300px;
-    background-color: brown;
+.card-container .card{
+    width: calc(100% / 3 - 20px);
 }
 
 .suggest{
