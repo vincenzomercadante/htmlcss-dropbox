@@ -78,6 +78,11 @@ p{
     gap: 20px;
 }
 
+.line{
+    width: var(--big-space);
+    border: 1px solid #d0d0d3;
+}
+
 
 /* ! main */
 
@@ -222,10 +227,6 @@ p{
     color: #0055f2;
 }
 
-.buy-option .line{
-    width:var(--big-space);
-    border: 1px solid #d0d0d3;
-}
 
 #highlights >*{
     margin-bottom: 20px;
@@ -333,6 +334,9 @@ p{
 .company > *{
     width: calc(100% / 3);
     height: calc(100vw /3);
+}
+
+.company .company-img-container{
     display: flex;
     flex-wrap: wrap;
 }
@@ -399,12 +403,53 @@ p{
     height: 100px;
 }
 
-.free-trial{
-
-    /* debug */
-    min-height: 300px;
-    background-color: darkorange;
+.company .recensione{
+    padding: 25px 50px;
 }
+
+.recensione img{
+    height: 150px;
+    padding-right: 300px;
+}
+
+.recensione .line{
+    width: 100px
+}
+
+.recensione p{
+    margin: var(--big-space) 0;
+}
+
+/* ! free trial */
+.free-trial{
+    background-color: #b4d0e7;
+    /* debug */
+    min-height: 450px;
+}
+
+.free-trial .container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    height: 450px;
+}
+
+.free-trial .container .trial-text{
+    margin-top: 20px;
+    width: 60%;
+}
+
+.free-trial .container .trial-button{
+    width: 40%;
+    padding: 0 50px;
+}
+
+.trial-button .btn-secondary{
+    background-color: white;
+    color: black;
+}
+
+
 
 .faq-section{
     margin-top: 200px;
@@ -430,8 +475,6 @@ p{
 }
 
 .footer .footer-row{
-
-
     /* debug */
     background-color: red;
     min-height: 150px;
