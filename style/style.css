@@ -312,19 +312,22 @@ p{
 
 .suggest{
     margin-top: 200px;
+    width: 60%;
+}
 
-    /* debug */
-    background-color: chartreuse;
-    min-height: 200px;
+.suggest .big-title{
+    margin-bottom: 50px;
+}
+
+.suggest a{
+    text-wrap: wrap;
+    text-decoration: underline;
+    color: #0055f2;
 }
 
 .company{
-    margin-top: var(--section-margin);
+    margin-top: 150px;
     display: flex;
-    width: 100vw;
-
-    /* debug */
-    background-color: crimson;
 }
 
 .company > *{
@@ -332,18 +335,68 @@ p{
     height: calc(100vw /3);
     display: flex;
     flex-wrap: wrap;
-
-    /* debug */
-    background-color: greenyellow;
 }
+
 
 .company .company-img-container .company-img{
     width: calc(100% / 2);
+    height: calc(100% / 2);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* debug */
-    background-color: aqua;
+.company-img img{
+    filter: invert(1);
+}
 
-    border: 3px dashed black;
+.company-img .logo-container{
+    height: calc(100% - 10px);
+    padding: 0px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-img.designit{
+    background-color: #d1e9cd;
+}
+
+.company-img.designit .logo-container{
+    background-color: #a2d39b;
+}
+
+.company-img.asu{
+    background-color: #61082b;
+}
+
+.company-img.uf{
+    background-color: #0093ce;
+}
+
+.company-img.topps{
+    background-color: #ff1c1c;
+}
+
+.company-img.relief{
+    background-color: #d5001f;
+}
+
+.company-img.hearst{
+    background-color: #b4d0e7;
+}
+
+.company-img.lonely-planet{
+    background-color: #0d2481;
+}
+
+.company-img.clear-channel{
+    background-color: #ffd830;
+}
+
+.company-img.clear-channel .logo-container img{
+    height: 100px;
 }
 
 .free-trial{
