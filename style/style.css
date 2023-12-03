@@ -42,6 +42,10 @@ p{
     text-align: center;
 }
 
+.button:hover{
+    opacity: 0.7;
+}
+
 .container{
     max-width: 1000px;
     margin: 0 auto;
@@ -57,6 +61,9 @@ p{
 
 /* ! header */
 .header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,11 +73,34 @@ p{
 .header .navbar{
     display: flex;
     align-items: center;
-    padding: 20px
+    padding: 0 20px;    
 }
 
-.navbar .nav-list li{
+.navbar .nav-list .nav-link{
     margin-left: 40px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.navbar .nav-list .nav-link a{
+    display: inline-block;
+    line-height: 70px;
+}
+
+
+.nav-list li a::after{
+    content: '';
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: none;
+}
+
+.nav-list li a:hover::after{
+    display: block;
 }
 
 .header .navbar.right{
@@ -173,6 +203,10 @@ p{
     display: flex;
     gap: 45px;
     flex-wrap: wrap;
+}
+
+.vr-container .card:hover{
+    border: 1px solid var(--base-color);
 }
 
 .vr-container .card{
@@ -333,7 +367,8 @@ p{
 
 .company > *{
     width: calc(100% / 3);
-    height: calc(100vw /3);
+    /* height: calc(100vw /3); */
+    aspect-ratio: 1;
 }
 
 .company .company-img-container{
@@ -344,7 +379,7 @@ p{
 
 .company .company-img-container .company-img{
     width: calc(100% / 2);
-    height: calc(100% / 2);
+    aspect-ratio: 1;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -405,6 +440,7 @@ p{
 
 .company .recensione{
     padding: 25px 50px;
+    background-color: #f5f5f5;
 }
 
 .recensione img{
@@ -437,6 +473,7 @@ p{
 .free-trial .container .trial-text{
     margin-top: 20px;
     width: 60%;
+    color: #5a1a39;
 }
 
 .free-trial .container .trial-button{
@@ -463,8 +500,31 @@ p{
     justify-content: space-between;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
+    position: relative;
+}   
+
+.faq-container .fa-chevron-up{
+   display: none;
 }
 
+.faq-section .faq-container i::after{
+    content: 'lorem ipsum dolor sit amet.';
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: none;
+}
+
+.faq-container .fa-chevron-down:hover::after{
+    display: block;
+}
+
+
+
+
+
+/* ! HOVER */
 .footer{
     margin-top: 200px;
     padding:var(--big-space) 0;
